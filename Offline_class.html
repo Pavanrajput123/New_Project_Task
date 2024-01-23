@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background: linear-gradient(to bottom left,rgb(41, 184, 245),rgb(243, 16, 148));
+            background-size: cover;
+        }
+        h1{
+            text-align: center;
+            
+        }
+        .Mainbox{
+           margin: 40px 50px 70px 90px;
+           height: 400px;
+           width: 1100px;
+           position: relative;
+           display: flex;
+           border-radius: 20px;
+           border: 3px solid rgb(62, 61, 61);
+           box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.24);
+           border: transparent;
+
+        }
+        .container{
+           margin: 50px 20px 20px 90px;
+           height: 300px;
+           width: 300px;
+           position: relative;
+           display: flex;
+           border-radius: 15px;
+           border: 2.5px solid black;
+           box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.24);
+            background: transparent;
+            display: inline-block;
+        }
+        .container2{
+           margin: 50px 20px 20px  300px;
+           height: 300px;
+           width: 300px;
+           position: relative;
+           display: flex;
+           border-radius: 15px;
+           border: 2.5px solid black;
+           box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.24);
+           background: transparent;
+            display: inline-block;
+        }
+        .Placement{
+           margin: 63px;
+           margin-top: 110px;
+           padding: 15px;
+           height: 50px;
+           width: 200px;
+           font-weight: bold;
+           border-radius: 15px;
+           background-color: rgb(249, 82, 216);
+           cursor: pointer;
+           
+           
+           
+
+        }
+        .Company{
+           margin: 63px;
+           padding: 15px;
+           height: 50px;
+           margin-top: 110px;
+           font-weight: bold;
+           width: 200px;
+           border-radius: 15px;
+
+           background-color: rgb(75, 153, 248);
+           cursor: pointer;
+           
+
+        }
+        
+        button {
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #2ecc71;
+            color: #0a0a0a;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            
+        }
+        .course{
+            text-align: center;
+            line-height: 25px;
+        }
+        button:hover ,button:active, button:focus{
+            background-color: #f6f9f9;
+            transition: all 1s ease 0s;
+        }
+
+
+    </style>
+    <title>Offline Classes</title>
+</head>
+<body>
+    <h1>Offline Classes</h1>
+<div class="Mainbox">
+    <div class="container">
+        <div class="course">
+            <h2>Course 1</h2>
+            <label>Time:</label> <span id="course1Time">8:00 AM - 10:00 AM</span><br>
+            <label>Fee:</label> <span id="course1Fee">4000 rupee</span><br>
+            <label>Place:</label> <span id="course1Place">Navale Bridge, Vadgaon</span><br>
+            <button onclick="enroll('Course 1')">Enroll</button>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="course">
+            <h2>Course 2</h2>
+            <label>Time:</label> <span id="course2Time">10:30 AM - 12:30 PM</span><br>
+            <label>Fee:</label> <span id="course2Fee">5000 rupee</span><br>
+            <label>Place:</label> <span id="course2Place">Katraj,Pune</span><br>
+            <button onclick="enroll('Course 2')">Enroll</button>
+        </div>
+    </div>
+</div>
+<script>
+    function enroll(course) {
+        alert('You have successfully Enrolled in ' + course + '!');
+    }
+</script>
+</body>
+</html>

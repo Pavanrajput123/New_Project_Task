@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background: linear-gradient(to bottom left,rgb(41, 184, 245),rgb(243, 16, 148));
+            background-size: cover;
+        }
+        h1{
+            text-align: center;
+            
+        }
+        .Mainbox{
+           margin: 40px 50px 70px 90px;
+           height: 400px;
+           width: 1100px;
+           position: relative;
+           display: flex;
+           border-radius: 20px;
+          background-image: url("placement1.jpg");
+          background-repeat: no-repeat;
+          background-size: 1100px 520px;
+          background-position: center;
+           border: 3px solid rgb(62, 61, 61);
+           box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.24);
+
+        }
+        .container{
+           margin: 50px 20px 20px 90px;
+           height: 300px;
+           width: 300px;
+           position: relative;
+           display: flex;
+           border-radius: 15px;
+           border: 2.5px solid black;
+           box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.24);
+            background: transparent;
+        }
+        .container2{
+           margin: 50px 20px 20px  300px;
+           height: 300px;
+           width: 300px;
+           position: relative;
+           display: flex;
+           border-radius: 15px;
+           border: 2.5px solid black;
+           box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.24);
+           background: transparent;
+            display: inline-block;
+        }
+        .Placement{
+           margin: 63px;
+           margin-top: 110px;
+           padding: 15px;
+           height: 50px;
+           width: 200px;
+           font-weight: bold;
+           border-radius: 15px;
+           background-color: rgb(249, 82, 216);
+           cursor: pointer;
+           
+           
+           
+
+        }
+        .Company{
+            margin: 63px;
+           padding: 15px;
+           height: 50px;
+           margin-top: 110px;
+           font-weight: bold;
+           width: 200px;
+           border-radius: 15px;
+
+           background-color: rgb(75, 153, 248);
+           cursor: pointer;
+           
+
+        }
+        button:hover ,button:active, button:focus{
+            background-color: #f6f9f9;
+            transition: all 1s ease 0s;
+        }
+
+        h2{
+            text-align: left;
+        }
+        h3{
+            font-size: large;
+        }
+        b{
+            font-size: 20px;
+        }
+        table{
+            font-size: 20px;
+        }
+
+    </style>
+    <title>Placement Section</title>
+</head>
+<body>
+    <h1>Placement Section</h1>
+<div class="Mainbox">
+    <div class="container">
+        <button type="button" onclick="enroll('Placed Student List')" class="Placement">Placed Student List</button>
+    </div>
+
+    <div class="container2">
+        <button type="button" onclick="enroll('Company Names List')" class="Company">Company Names List</button>
+    </div>
+</div>
+    <div class="section">
+        <h2>Drives Information :</h2>
+        <table width="500"  border="3"><b>Upcoming drives:</b>
+            <tr align="center"> 
+                <th>Comapany_Name</th> 
+                <th>Arrive_Date</th> 
+            </tr> 
+            <tr align="center"> 
+                <td>Telphayech LLP</td> 
+                <td>18/10/2023</td> 
+            </tr> 
+            <tr align="center"> 
+                <td>Tech-Mahindra</td> 
+                <td>12/01/2023</td>
+            </tr>
+            <tr align="center"> 
+                <td>Microsoft</td> 
+                <td>2/04/2023</td>
+            </tr>
+            <tr align="center"> 
+                <td>Wipro</td> 
+                <td>1/01/2024</td>
+            </tr>
+
+    </table>
+    </div>
+    <script>
+        function enroll(Mainbox) {
+            alert('You Need to Add ' + Mainbox + '!');
+        }
+    </script>
+
+</body>
+</html>
